@@ -11,7 +11,7 @@ public class TicTacToeBoard extends Board {
     public void setCell(Cell cell, String symbol) { cells[cell.getRow()][cell.getCol()] = symbol; }
 
     @Override
-    public void move(Move move) { // setCell(move.getCell(), move.getPlayer().symbol()); }
+    public void move(Move move) { setCell(move.getCell(), move.getPlayer().symbol()); }
 
     @Override
     public String toString(){
